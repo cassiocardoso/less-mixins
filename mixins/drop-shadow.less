@@ -1,0 +1,9 @@
+/* ============================== *\
+ * Drop shadow
+\* ============================== */
+
+.drop-shadow(@x, @y, @blur, @alpha) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+     -moz-box-shadow: @s @s @blur rgba(0, 0, 0, @alpha);
+          box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}

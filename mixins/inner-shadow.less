@@ -1,0 +1,9 @@
+/* ============================== *\
+ * Inner shadow
+\* ============================== */
+
+.inner-shadow(@horizontal, @vertical, @blur, @alpha) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+     -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+          box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}

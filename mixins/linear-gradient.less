@@ -1,0 +1,14 @@
+/* ============================== *\
+ * Linear gradient
+\* ============================== */
+
+.linear-gradient(@top-color, @bottom-color) {
+  background: @top-color; // Old brosers
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @top-color), color-stop(100%, @bottom-color)); //Chrome, Safari 4+
+  background: -webkit-linear-gradient(top, @top-color 0%, @bottom-color 100%); // Chrome 10+, Safari 5.1+
+  background:    -moz-linear-gradient(top, @top-color 0%, @bottom-color 100%); // FF 3.6+
+  background:     -ms-linear-gradient(top, @top-color 0%, @bottom-color 100%); // IE 10+
+  background:      -o-linear-gradient(top, @top-color 0%, @bottom-color 100%); // Opera 11.10+
+  background: linear-gradient(to bottom, @top-color 0%, @bottom-color 100%); // W3C
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0); // IE 6-9
+}
