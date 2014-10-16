@@ -4,7 +4,15 @@ This repository will hold all [LESS](http://lesscss.org/) mixins I've been using
 
 This is not intent to be like [LESS Elements](http://lesselements.com/) or [LESS Hat](http://lesshat.madebysource.com/), which are great mixins libraries for LESS. It's just some useful mixins I think it's worth sharing.
 
-## Table of contents
+Feel free to download and use it. And if you really enjoy the project, contribute.
+
+## Available via Bower
+
+You can download the mixins through [Bower](http://bower.io):
+
+	bower install useful-less-mixins
+
+## Structure
 
 The `mixins.less` file in root is the main file which agregates all mixins.
 
