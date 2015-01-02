@@ -1,0 +1,60 @@
+/* ============================== *\
+ * Arrow
+\* ============================== */
+
+/* 
+ * Triangles
+ *
+\* ============================== */
+
+..triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangle-top(@size: 100px, @color: #000) {
+  border-width: 0 @size @size @size;
+  border-color: transparent transparent @color transparent;
+}
+
+.triangle-top-right(@size: 100px, @color: #000) {
+  border-width: 0 @size @size 0;
+  border-color: transparent @color transparent transparent;
+}
+
+.triangle-top-left(@size: 100px, @color: #000) {
+  border-width: @size @size 0 0;
+  border-color: @color transparent transparent transparent;
+}
+
+.triangle-bottom(@size: 100px, @color: #000) {
+  border-width: @size @size 0 @size;
+  border-color: @color transparent transparent transparent;
+}
+
+.triangle-bottom-left(@size: 100px, @color: #000) {
+  border-width:  @size 0 0 @size;
+  border-color: transparent transparent transparent @color;
+}
+
+.triangle-bottom-right(@size: 100px, @color: #000) {
+  border-width: 0 0 @size @size;
+  border-color: transparent transparent @color transparent;
+}
+
+.triangle-right(@size: 100px, @color: #000) {
+  border-width: @size 0 @size @size;
+  border-color: transparent transparent transparent @color;
+}
+
+.triangle-left(@size: 100px, @color: #000) {
+  border-width: @size @size @size 0;
+  border-color: transparent @color transparent transparent;
+}
+
+// To use
+.my-arrow {
+  &:extend(.triangle);
+  .triangle-bottom-right(200px,#f00);
+}
