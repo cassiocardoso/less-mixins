@@ -1,6 +1,6 @@
 # LESS Mixins
 
-This repository will hold all [LESS](http://lesscss.org/) mixins I've been using in my recent projects.
+This repository holds all [LESS](http://lesscss.org/) mixins I've been using in my recent projects.
 
 This is not intent to be like [LESS Elements](http://lesselements.com/) or [LESS Hat](http://lesshat.madebysource.com/), which are great mixins libraries for LESS. It's just some useful mixins I think it's worth sharing.
 
@@ -22,7 +22,7 @@ Every mixin has it's own file inside `/mixins` folder. So it's easy to add/remov
 
 - [Cassio Cardoso](https://github.com/cassiocardoso) - [@cassiocardoso](http://twitter.com/cassiocardoso)
 
-## Contributing
+## [Contributing](https://github.com/cassiocardoso/less-mixins/issues)
 
 Contributors are more than welcome.
 
