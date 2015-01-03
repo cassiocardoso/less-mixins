@@ -2,13 +2,13 @@
  * Transition
 \* ============================== */
 
-.transition(@property, @duration, @ease) {
+.transition(@property, @duration: .4s, @ease: linear) {
   -webkit-transition: @property, @duration @ease;
      -moz-transition: @property, @duration @ease;
        -o-transition: @property, @duration @ease;
           transition: @property, @duration @ease;
 }
-.transition-all(@duration, @ease) {
+.transition-all(@duration: .4s, @ease: linear) {
   -webkit-transition: all @duration @ease;
      -moz-transition: all @duration @ease;
        -o-transition: all @duration @ease;
@@ -22,7 +22,7 @@
           transition-property: @property;
 }
 
-.transition-duration(@duration) {
+.transition-duration(@duration: .4s) {
   -webkit-transition-duration: @duration;
      -moz-transition-duration: @duration;
        -o-transition-duration: @duration;
@@ -36,7 +36,7 @@
           transition-timing-function: @timing;
 }
 
-.transition-delay(@delay) {
+.transition-delay(@delay: .5s) {
   -webkit-transition-delay: @delay;
      -moz-transition-delay: @delay;
        -o-transition-delay: @delay;

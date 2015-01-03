@@ -2,8 +2,16 @@
  * Box shadow
 \* ============================== */
 
-.box-shadow(@args) {
-  -webkit-box-shadow: @args;
-     -moz-box-shadow: @args;
-          box-shadow: @args;
+.box-shadow(@x: 7px, @y: 7px, @blur: 13px, @spread: 0, @color: rgba(5, 5, 5, .55)) {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
+
+// Inner shadow
+
+.inner-shadow(@x: 7px, @y: 7px, @blur: 13px, @spread: 0, @color: rgba(5, 5, 5, .55)) {
+  -webkit-box-shadow: inset @arguments;
+     -moz-box-shadow: inset @arguments;
+          box-shadow: inset @arguments;
 }

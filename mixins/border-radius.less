@@ -2,7 +2,7 @@
  * Border radius
 \* ============================== */
 
-.border-radius(@topright, @bottomright, @bottomleft, @topleft) {
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
   .background-clip(padding-box);
 
   -webkit-border-top-right-radius: @topright;
@@ -21,22 +21,22 @@
 
 // Single side border-radus
 
-.border-top-radius(@radius) {
+.border-top-radius(@radius: 0) {
   border-top-right-radius: @radius;
    border-top-left-radius: @radius;
 }
 
-.border-right-radius(@radius) {
+.border-right-radius(@radius: 0) {
   border-bottom-right-radius: @radius;
      border-top-right-radius: @radius;
 }
 
-.border-bottom-radius(@radius) {
+.border-bottom-radius(@radius: 0) {
   border-bottom-right-radius: @radius;
    border-bottom-left-radius: @radius;
 }
 
-.border-left-radius(@radius) {
+.border-left-radius(@radius: 0) {
   border-bottom-left-radius: @radius;
      border-top-left-radius: @radius;
 }

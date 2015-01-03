@@ -2,7 +2,7 @@
  * Linear gradient
 \* ============================== */
 
-.linear-gradient(@top-color, @bottom-color) {
+.linear-gradient(@top-color: #999, @bottom-color: #333) {
   background: @top-color; // Old brosers
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @top-color), color-stop(100%, @bottom-color)); //Chrome, Safari 4+
   background: -webkit-linear-gradient(top, @top-color 0%, @bottom-color 100%); // Chrome 10+, Safari 5.1+
